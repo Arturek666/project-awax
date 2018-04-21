@@ -634,4 +634,345 @@ nav ul li a:hover {
   padding-bottom: 20px;
 }
 
+.button-premium {
+  display: flex;
+  justify-content: center;
+  padding: 145px 0 60px 0;
+}
+
+.button-premium button:hover {
+  background-color: transparent;
+  border: 1px solid #b88b58;
+  color: #b88b58;
+}
+
+.work {
+  background-color: black;
+}
+
+.work .facts {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding-bottom: 115px;
+}
+
+.work .facts h1 {
+  font-size: 48px;
+  font-family: "Montserrat", sans-serif;
+  color: #b88b58;
+  font-weight: bold;
+  line-height: 0.583;
+}
+
+.work .facts h2 {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: 600;
+  line-height: 0.583;
+  padding-bottom: 15px;
+}
+
+.work .facts p {
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  color: #aeaeae;
+  line-height: 1.75;
+}
+
+.work .facts span {
+  font-size: 48px;
+  color: #aeaeae;
+  line-height: 0.75;
+}
+
+.social-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0;
+}
+
+.social-bar .connection {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-bar .connection img {
+  padding-right: 15px;
+}
+
+.social-bar .connection h1 {
+  color: #aeaeae;
+  padding-right: 62px;
+}
+
+.social-bar .social-icon small {
+  padding-right: 35px;
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  color: #aeaeae;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2.5;
+  text-align: left;
+}
+
+.social-bar .social-icon .twitter {
+  background-color: #00aced;
+}
+
+.social-bar .social-icon .linkedin {
+  background-color: #007bb6;
+}
+
+.social-bar .social-icon .facebook {
+  background-color: #3b5998;
+}
+
+.social-bar .social-icon .google-plus {
+  background-color: #dd4b39;
+}
+
+.social-bar .social-icon .pinterest {
+  background-color: #cb2027;
+}
+
+.social-bar .social-icon .icon-btn {
+  border-radius: 50%;
+  border: none;
+  width: 33px;
+  height: 33px;
+}
+
+.social-bar .social-icon .icon-btn .fab {
+  font-size: 17px;
+  color: white;
+}
+
+.social-bar .social-icon .icon-btn .fas {
+  font-size: 17px;
+  color: white;
+}
+
+.contact {
+  background-color: #f4f4f4;
+  border-top: 1px solid #aeaeae;
+}
+
+.contact .form1 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 45px;
+}
+
+.contact .form1 input {
+  border-bottom: 1px solid #aeaeae;
+  background: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin-right: 30px;
+  width: 250px;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  color: #9e9e9e;
+  text-transform: uppercase;
+  line-height: 2.5;
+  text-align: left;
+}
+
+.contact .form2 {
+  display: flex;
+  justify-content: center;
+}
+
+.contact .form2 input {
+  border-bottom: 1px solid #aeaeae;
+  background: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin-right: 30px;
+  width: 530px;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  color: #9e9e9e;
+  text-transform: uppercase;
+  line-height: 2.5;
+  text-align: left;
+}
+
+.contact .form3 {
+  display: flex;
+  justify-content: center;
+}
+
+.contact .form3 textarea {
+  border-bottom: 1px solid #aeaeae;
+  background: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin-right: 30px;
+  width: 530px;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  color: #9e9e9e;
+  text-transform: uppercase;
+  line-height: 2.5;
+  text-align: left;
+}
+
+.contact .form-submit {
+  display: flex;
+  justify-content: center;
+}
+
+.contact .form-submit input {
+  margin: 50px 0 75px 0;
+}
+
+.contact .form-submit input:hover {
+  background-color: transparent;
+  border: 1px solid #b88b58;
+  color: #b88b58;
+  cursor: pointer;
+}
+
+.map {
+  background-image: url("../images/mapa.jpg");
+  background-size: cover;
+  position: relative;
+  width: 1600px;
+  height: 415px;
+  padding-top: 35px;
+}
+
+.map .contact-box {
+  width: 540px;
+  height: 343px;
+  background-color: white;
+  padding: 53px 0 0 40px;
+}
+
+.map .contact-box .contact-map {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.map .contact-box .contact-map p {
+  font-size: 12px;
+  font-family: "Myriad Pro";
+  color: #7e7e7e;
+  line-height: 2;
+  text-align: left;
+  padding-left: 16px;
+}
+
+footer {
+  height: 260px;
+  background-color: black;
+}
+
+footer .footer-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .footer-flex p {
+  color: #aeaeae;
+}
+
+footer .footer-flex .footer-part1 .social-footer {
+  display: flex;
+  justify-content: center;
+  padding: 0 3px 100px 0;
+}
+
+footer .footer-flex .footer-part1 .social-footer .icon-btn {
+  border-radius: 50%;
+  background-color: #373737;
+  border: none;
+  width: 33px;
+  height: 33px;
+  transition: 0.4s;
+  margin: 30px 3px 0 3px;
+}
+
+footer .footer-flex .footer-part1 .social-footer .icon-btn:hover {
+  background-color: #b88b58;
+  cursor: pointer;
+}
+
+footer .footer-flex .footer-part1 .social-footer .icon-btn .fab {
+  font-size: 17px;
+  color: white;
+}
+
+footer .footer-flex .footer-part1 .social-footer .icon-btn .fas {
+  font-size: 17px;
+  color: white;
+}
+
+footer .footer-flex .footer-part1 .title-awax p {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  line-height: 1.786;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+footer .footer-flex :nth-child(2) p {
+  margin-top: 30px;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  color: #7e7e7e;
+  line-height: 1.75;
+  text-align: left;
+}
+
+footer .footer-flex .subscribe {
+  margin-top: 30px;
+  width: 350px;
+  height: 198px;
+  border-radius: 3px;
+  background-color: #373737;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer-flex .subscribe :first-child {
+  border-bottom: 2px solid #aeaeae;
+  background: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  width: 222px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: #9e9e9e;
+  text-transform: uppercase;
+  line-height: 2.5;
+  text-align: center;
+  font-weight: 600;
+}
+
+footer .footer-flex .subscribe :last-child {
+  margin-top: 25px;
+}
+
+footer .footer-flex .subscribe :last-child:hover {
+  background-color: transparent;
+  border: 1px solid #b88b58;
+  color: #b88b58;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=style.css.map */
