@@ -345,6 +345,13 @@ nav ul li a:hover {
   padding-bottom: 50px;
 }
 
+.btn-gallery button:hover {
+  background-color: transparent;
+  border: 1px solid #b88b58;
+  color: #b88b58;
+  cursor: pointer;
+}
+
 #our-team {
   background-image: url("../images/background-team.jpg");
   background-attachment: fixed;
@@ -398,7 +405,233 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   padding: 0 3px;
+}
+
+#our-team .our-team1 .worker .social-team .icon-btn {
   border-radius: 50%;
+  background-color: #aeaeae;
+  border: none;
+  width: 33px;
+  height: 33px;
+  transition: 0.4s;
+  margin: 30px 3px 0 3px;
+}
+
+#our-team .our-team1 .worker .social-team .icon-btn:hover {
+  background-color: #b88b58;
+  cursor: pointer;
+}
+
+#our-team .our-team1 .worker .social-team .icon-btn .fab {
+  font-size: 17px;
+  color: white;
+}
+
+#our-team .our-team1 .worker .social-team .icon-btn .fas {
+  font-size: 17px;
+  color: white;
+}
+
+.happy-client {
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #aeaeae;
+}
+
+.happy-client .client {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.happy-client .client img {
+  object-fit: contain;
+}
+
+.happy-client .client :first-child {
+  padding-bottom: 30px;
+}
+
+.happy-client .client h1 {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-weight: bold;
+  line-height: 0.75;
+  text-align: center;
+}
+
+.happy-client .client :nth-child(3) {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  line-height: 2;
+  text-align: center;
+  font-weight: 400;
+}
+
+.happy-client .client :nth-child(4) {
+  padding: 25px 0 20px 0;
+}
+
+.happy-client .client :last-child {
+  text-align: center;
+  padding-bottom: 100px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: #7e7e7e;
+  line-height: 1.786;
+}
+
+.brands-section {
+  margin: 40px 0;
+}
+
+.brands-section .brands {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brands-section .brands img {
+  object-fit: contain;
+}
+
+.price-section {
+  background-color: #f4f4f4;
+  border-top: 1px solid #aeaeae;
+}
+
+.price-section .prices {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 60px;
+}
+
+.price-section .prices .price-box {
+  width: 255px;
+  height: 343px;
+  border-radius: 3px;
+  background-color: white;
+  margin: 0 15px;
+  text-align: center;
+  padding: auto 0;
+}
+
+.price-section .prices .price-box h1 {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  text-transform: uppercase;
+  padding: 30px 0 15px 0;
+}
+
+.price-section .prices .price-box .fas {
+  font-size: 30px;
+}
+
+.price-section .prices .price-box span {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 0.7;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.price-section .prices .price-box small {
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  color: #aeaeae;
+  text-transform: uppercase;
+  line-height: 2.5;
+}
+
+.price-section .prices .price-box ul {
+  list-style-type: none;
+}
+
+.price-section .prices .price-box ul li {
+  font-size: 11px;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  line-height: 1.3;
+  padding-bottom: 13px;
+}
+
+.price-section .prices .btn-price {
+  border-radius: 20px;
+  width: 129px;
+  height: 45px;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.5;
+  text-align: center;
+  background-color: #373737;
+  color: white;
+  border: none;
+  transition: 0.6s;
+}
+
+.price-section .prices .btn-price:hover {
+  background-color: #b88b58;
+  cursor: pointer;
+}
+
+.premium {
+  display: flex;
+  justify-content: space-between;
+}
+
+.premium .tick {
+  display: flex;
+}
+
+.premium .tick img {
+  object-fit: contain;
+  align-self: flex-start;
+  padding-right: 30px;
+}
+
+.premium .tick h1 {
+  font-size: 21px;
+  font-family: "Montserrat", sans-serif;
+  color: #242424;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2;
+  text-align: left;
+}
+
+.premium .tick p {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: #242424;
+  line-height: 1.5;
+  text-align: left;
+  font-weight: 400;
+}
+
+.premium .tick ul {
+  list-style-type: none;
+}
+
+.premium .tick ul:last-child {
+  padding-bottom: 30px;
+}
+
+.premium .tick ul li {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: #242424;
+  line-height: 2;
+  text-align: left;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.feature:nth-child(2) p {
+  padding-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
