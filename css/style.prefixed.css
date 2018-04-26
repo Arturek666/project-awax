@@ -41,6 +41,7 @@ nav ul {
   -ms-flex-pack: center;
       justify-content: center;
   list-style-type: none;
+  padding: 0;
 }
 
 nav ul li {
@@ -66,53 +67,61 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
-.hero {
-  background-image: url("../images/background-image.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  position: relative;
+.carousel-item img {
   width: 1600px;
   height: 750px;
+  position: relative;
 }
 
-.hero .hero-title {
-  padding-top: 245px;
-}
-
-.hero .hero-title .hero-extend, .hero .hero-title .text-hero, .hero .hero-title span, .hero .hero-title p {
+.carousel-item .hero-title .hero-extend, .carousel-item .hero-title .text-hero, .carousel-item .hero-title span, .carousel-item .hero-title p {
   font-weight: bold;
   text-transform: uppercase;
-  text-align: center;
   font-family: "Montserrat", sans-serif;
+  position: absolute;
+  top: 0;
+  right: 10px;
 }
 
-.hero .hero-title .text-hero {
+.carousel-item .hero-title .text-hero {
   font-size: 72px;
   line-height: 0.958;
   color: white;
+  position: absolute;
+  left: 0px;
+  top: 200px;
+  text-align: center;
 }
 
-.hero .hero-title span {
+.carousel-item .hero-title span {
   font-size: 72px;
   line-height: 0.958;
   color: #b88b58;
+  position: absolute;
+  left: 17px;
+  top: 65px;
 }
 
-.hero .hero-title p {
+.carousel-item .hero-title p {
   font-size: 24px;
   color: white;
   padding-top: 20px;
+  position: absolute;
+  left: 650px;
+  top: 325px;
 }
 
-.hero .btn-flex {
+.carousel-item .btn-flex {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
   padding-top: 70px;
+  position: absolute;
+  left: 710px;
+  top: 355px;
 }
 
-.hero .btn-flex .btn-transparent:hover {
+.carousel-item .btn-flex .btn-transparent:hover {
   background-color: transparent;
   border: 1px solid #b88b58;
 }
@@ -131,6 +140,12 @@ nav ul li a:hover {
   color: white;
   border: none;
   transition: 0.6s;
+}
+
+.call-up {
+  position: absolute;
+  left: 1450px;
+  top: 835px;
 }
 
 .title-section-black {
@@ -214,7 +229,7 @@ nav ul li a:hover {
 
 #services {
   background-color: black;
-  height: 430px;
+  height: 470px;
 }
 
 #services .services {
@@ -328,7 +343,7 @@ nav ul li a:hover {
 
 .pictures .photo {
   position: relative;
-  padding: 10px;
+  padding: 8px;
 }
 
 .pictures .photo .layer {
@@ -946,6 +961,12 @@ nav ul li a:hover {
   line-height: 2;
   text-align: left;
   padding-left: 16px;
+}
+
+.button-up {
+  position: absolute;
+  left: 250px;
+  top: 7255px;
 }
 
 footer {
