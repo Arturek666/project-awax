@@ -35,6 +35,7 @@ nav ul {
   justify-content: center;
   list-style-type: none;
   padding: 0;
+  margin-bottom: 0 !important;
 }
 
 nav ul li {
@@ -42,8 +43,8 @@ nav ul li {
 }
 
 nav ul li a {
-  text-decoration: none;
-  color: white;
+  text-decoration: none !important;
+  color: white !important;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 14px;
@@ -56,6 +57,7 @@ nav ul li a:hover {
   align-items: flex-end;
   border-bottom: 5px solid #b88b58;
   cursor: pointer;
+  padding-bottom: -5px;
 }
 
 .carousel-item img {
@@ -259,12 +261,12 @@ nav ul li a:hover {
   padding-bottom: 10px;
 }
 
-.nav-flex {
+.nav-projects {
   display: flex;
   justify-content: center;
 }
 
-.nav-flex .navigation {
+.nav-projects .nav-second {
   border: 1px solid #aeaeae;
   border-radius: 25px;
   background-color: #f4f4f4;
@@ -272,31 +274,32 @@ nav ul li a:hover {
   line-height: 56px;
 }
 
-.nav-flex .navigation ul {
+.nav-projects .nav-second ul {
   display: flex;
   flex: 1;
   justify-content: center;
   list-style-type: none;
+  margin-bottom: 0 !important;
 }
 
-.nav-flex .navigation ul li {
+.nav-projects .nav-second ul li {
   padding: 0 10px 0 10px;
   border-right: 1px solid #aeaeae;
   transition: 0.4s;
 }
 
-.nav-flex .navigation ul li:last-child {
+.nav-projects .nav-second ul li:last-child {
   border-right: none;
 }
 
-.nav-flex .navigation ul li:hover {
+.nav-projects .nav-second ul li:hover {
   display: flex;
   align-items: flex-end;
   border-bottom: 5px solid #b88b58;
   cursor: pointer;
 }
 
-.nav-flex .navigation ul li a {
+.nav-projects .nav-second ul li a {
   text-decoration: none;
   color: black;
   font-family: "Montserrat", sans-serif;
