@@ -15,7 +15,7 @@
   margin: 0 auto;
 }
 
-nav {
+header nav {
   background-color: black;
   color: whiteColor;
   line-height: 100px;
@@ -25,14 +25,31 @@ nav {
       flex-direction: row;
 }
 
-nav div {
+header nav div {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
 }
 
-nav ul {
+header nav .mobile-menu {
+  display: none;
+  text-align: right;
+}
+
+header nav .mobile-menu label {
+  display: inline-block;
+}
+
+header nav #mobile-menu {
+  display: none;
+}
+
+header nav #mobile-menu:checked + ul {
+  display: block;
+}
+
+header nav ul {
   display: -ms-flexbox;
   display: flex;
   -ms-flex: 1;
@@ -46,11 +63,11 @@ nav ul {
       flex-wrap: wrap;
 }
 
-nav ul li {
-  padding: 0 10px 0 10px;
+header nav ul li {
+  padding: 0 10px;
 }
 
-nav ul li a {
+header nav ul li a {
   text-decoration: none !important;
   color: white !important;
   font-family: "Montserrat", sans-serif;
@@ -60,7 +77,7 @@ nav ul li a {
   transition: 0.4s;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: end;
@@ -134,13 +151,6 @@ nav ul li a:hover {
 .carousel-item .btn-flex .btn-transparent:hover {
   background-color: transparent;
   border: 1px solid #b88b58;
-}
-
-.btn-center:before,
-.btn-center:after {
-  content: '';
-  -ms-flex: 1 0 auto;
-      flex: 1 0 auto;
 }
 
 .btn {
@@ -256,6 +266,9 @@ nav ul li a:hover {
       flex-direction: row;
   -ms-flex-pack: center;
       justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
 }
 
 #services .services .service {
@@ -266,6 +279,7 @@ nav ul li a:hover {
   -ms-flex-pack: center;
       justify-content: center;
   border-left: 1px solid #aeaeae;
+  width: 25%;
 }
 
 #services .services .service:last-child {
@@ -275,7 +289,7 @@ nav ul li a:hover {
 #services .services .service img {
   -o-object-fit: contain;
      object-fit: contain;
-  padding: 0 110px 35px 110px;
+  padding-bottom: 10px;
 }
 
 #services .services .service .service-title {
@@ -421,7 +435,6 @@ nav ul li a:hover {
   background-attachment: fixed;
   background-size: cover;
   position: relative;
-  height: 700px;
 }
 
 #our-team .our-team1 {
@@ -431,6 +444,7 @@ nav ul li a:hover {
       flex-direction: row;
   -ms-flex-pack: center;
       justify-content: center;
+  padding-bottom: 50px;
 }
 
 #our-team .our-team1 .worker {
@@ -1093,5 +1107,95 @@ footer .footer-flex .subscribe :last-child:hover {
   border: 1px solid #b88b58;
   color: #b88b58;
   cursor: pointer;
+}
+
+@media (max-width: 1199px) {
+  nav ul li {
+    padding: 0 5px;
+  }
+}
+
+.gallery .pictures {
+  padding: 5px;
+}
+
+.gallery .pictures .photo {
+  width: 25%;
+}
+
+.our-team1 .worker {
+  width: 33.333334%;
+}
+
+@media (max-width: 991px) {
+  header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    height: auto;
+  }
+  header nav ul {
+    display: none;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    width: 100%;
+    background-color: black;
+  }
+  header nav ul li {
+    display: block;
+    text-align: center;
+    line-height: 25px;
+    padding: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #b88b58;
+    margin: 0 auto;
+  }
+  header nav ul li a {
+    color: white;
+    font-size: 18px;
+  }
+  header nav .mobile-menu {
+    display: block;
+    padding: 10px 10px 0 0;
+  }
+  .carousel-item .hero-title .text-hero {
+    font-size: 50px;
+    line-height: 0;
+  }
+  .carousel-item .hero-title span {
+    font-size: 50px;
+    line-height: 0;
+  }
+  .carousel-item .hero-title p {
+    padding-top: 0;
+  }
+  .about-flex {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .about-flex p {
+    text-align: center;
+  }
+  .about-flex button {
+    margin: 0 auto;
+  }
+  #services {
+    height: auto;
+  }
+  #services .services:nth-child(2) {
+    border-right: 1px solid white;
+    margin-bottom: 20px;
+    height: auto;
+  }
+  #services .services .service {
+    width: 50%;
+    margin-bottom: 20px;
+  }
 }
 /*# sourceMappingURL=style.prefixed.css.map */
