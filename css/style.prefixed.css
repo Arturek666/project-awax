@@ -66,7 +66,6 @@ nav ul li a:hover {
       align-items: flex-end;
   border-bottom: 5px solid #b88b58;
   cursor: pointer;
-  padding-bottom: -5px;
 }
 
 .carousel-item img {
@@ -147,7 +146,7 @@ nav ul li a:hover {
 .call-up {
   position: absolute;
   left: 1450px;
-  top: 835px;
+  top: 817px;
 }
 
 .title-section-black {
@@ -969,7 +968,7 @@ nav ul li a:hover {
 .button-up {
   position: absolute;
   left: 250px;
-  top: 7255px;
+  top: 7235px;
 }
 
 footer {
