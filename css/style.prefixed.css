@@ -807,10 +807,13 @@ header nav ul li a:hover {
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .social-bar .connection img {
   padding-right: 15px;
+  height: 38px;
 }
 
 .social-bar .connection h1 {
@@ -965,6 +968,7 @@ header nav ul li a:hover {
   position: relative;
   height: 415px;
   padding-top: 35px;
+  background-position: center;
 }
 
 .map .contact-box {
@@ -1113,18 +1117,18 @@ footer .footer-flex .subscribe :last-child:hover {
   nav ul li {
     padding: 0 5px;
   }
-}
-
-.gallery .pictures {
-  padding: 5px;
-}
-
-.gallery .pictures .photo {
-  width: 25%;
-}
-
-.our-team1 .worker {
-  width: 33.333334%;
+  .gallery .pictures {
+    padding: 5px;
+    dosplay: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .gallery .pictures .photo {
+    width: 25%;
+  }
+  .our-team1 .worker {
+    width: 33.333334%;
+  }
 }
 
 @media (max-width: 991px) {
@@ -1142,6 +1146,8 @@ footer .footer-flex .subscribe :last-child:hover {
     transform: translateX(50%);
     width: 100%;
     background-color: black;
+    border-bottom: 2px solid #b88b58;
+    margin: 0 auto;
   }
   header nav ul li {
     display: block;
@@ -1149,14 +1155,12 @@ footer .footer-flex .subscribe :last-child:hover {
     line-height: 25px;
     padding: 10px;
     padding-bottom: 5px;
-    border-bottom: 2px solid #b88b58;
-    margin: 0 auto;
   }
-  header nav ul li a {
+  header nav ul a {
     color: white;
     font-size: 18px;
   }
-  header nav .mobile-menu {
+  header .mobile-menu {
     display: block;
     padding: 10px 10px 0 0;
   }
@@ -1196,6 +1200,169 @@ footer .footer-flex .subscribe :last-child:hover {
   #services .services .service {
     width: 50%;
     margin-bottom: 20px;
+  }
+  .gallery .pictures .photo {
+    width: 35%;
+    margin: 0 auto;
+  }
+  #our-team .our-team1 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #our-team .our-team1 .worker {
+    margin: 0 30% 15px 30%;
+  }
+  .price-section .prices {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .price-section .prices .price-box {
+    margin: 0 3%;
+    margin-bottom: 15px;
+  }
+  .premium {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .premium img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .premium .feature {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .premium .feature .tick {
+    margin: 0 auto;
+  }
+  .premium .feature .tick img {
+    display: none;
+  }
+  .premium .feature .tick .description h1 {
+    text-align: center;
+  }
+  .premium .feature .tick .description p {
+    text-align: center;
+    padding: 0;
+  }
+  .premium .feature .tick .description ul {
+    padding: 0;
+  }
+  .premium .feature .tick .description ul li {
+    text-align: center;
+  }
+  .button-premium {
+    padding-top: 35px;
+  }
+  .work .facts {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .work .facts .facts-descriptions {
+    margin: 0 10% 20px 10%;
+  }
+  .social-bar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .social-bar .social-icon small {
+    padding-right: 15px;
+  }
+  .social-bar .connection h1 {
+    padding-right: 30px;
+  }
+  .map .contact-box {
+    margin: auto;
+  }
+  footer {
+    height: 700px;
+  }
+  footer .footer-flex {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  footer .footer-flex .footer-part1 .title-awax {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  footer .footer-flex .footer-part1 .social-footer {
+    padding: 0 3px 0 0;
+  }
+  footer .footer-flex .flex-sub .subscribe {
+    margin: 30px auto 0 auto;
+  }
+  footer .footer-flex .footer-par p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .carousel-item .hero-title .text-hero {
+    font-size: 40px;
+    line-height: -1;
+  }
+  .carousel-item .hero-title span {
+    font-size: 40px;
+    line-height: -1;
+    top: 40px;
+  }
+  .carousel-item .hero-title p {
+    padding-top: 0;
+    font-size: 20px;
+    top: 270px;
+  }
+  #services .services:nth-child(2) {
+    border-right: none;
+  }
+  #services .services .service {
+    width: 100%;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid white;
+  }
+  #services .services .service:last-child {
+    border-right: none;
+    border-bottom: none;
+  }
+  .brands-section .brands {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .brands-section .brands div {
+    width: 33.33%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .premium img {
+    height: 284px;
+    width: 384px;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=style.prefixed.css.map */
