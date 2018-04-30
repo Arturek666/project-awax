@@ -1072,11 +1072,16 @@
                             display: flex;
                             flex-wrap: wrap;
                             justify-content: center;
+                            .about-flex-text {
+                                display: flex;
+
+                                flex-direction: column;
+                            }
                             p {
                                 text-align: center;
                             }
                             button {
-                                margin: 0 auto;
+                                margin: 30px auto;
                             }
                         } //Services
                         #services {

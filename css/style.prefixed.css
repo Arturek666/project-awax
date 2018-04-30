@@ -1177,11 +1177,17 @@ footer .footer-flex .subscribe :last-child:hover {
     -ms-flex-pack: center;
         justify-content: center;
   }
+  .about-flex .about-flex-text {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
   .about-flex p {
     text-align: center;
   }
   .about-flex button {
-    margin: 0 auto;
+    margin: 30px auto;
   }
   #services {
     height: auto;

@@ -1083,11 +1083,15 @@ footer .footer-flex .subscribe :last-child:hover {
     flex-wrap: wrap;
     justify-content: center;
   }
+  .about-flex .about-flex-text {
+    display: flex;
+    flex-direction: column;
+  }
   .about-flex p {
     text-align: center;
   }
   .about-flex button {
-    margin: 0 auto;
+    margin: 30px auto;
   }
   #services {
     height: auto;
