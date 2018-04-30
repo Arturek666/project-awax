@@ -32,21 +32,17 @@ header nav div {
       align-items: center;
 }
 
-header nav .mobile-menu {
+header nav label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
   display: none;
-  text-align: right;
+  width: 26px;
+  float: right;
 }
 
-header nav .mobile-menu label {
-  display: inline-block;
-}
-
-header nav #mobile-menu {
+header nav #toggle {
   display: none;
-}
-
-header nav #mobile-menu:checked + ul {
-  display: block;
 }
 
 header nav ul {
@@ -975,7 +971,7 @@ header nav ul li a:hover {
   width: 540px;
   height: 343px;
   background-color: white;
-  padding: 53px 0 0 40px;
+  padding: 53px 40px 0 40px;
 }
 
 .map .contact-box .contact-map {
@@ -997,10 +993,15 @@ header nav ul li a:hover {
   padding-left: 16px;
 }
 
-.button-up {
+.scrolltop .scroll {
   position: absolute;
-  left: 250px;
-  top: 7235px;
+  right: 1600px;
+  bottom: 380px;
+  cursor: pointer;
+}
+
+.scrolltop .scroll:hover {
+  transform: scale(1.1);
 }
 
 footer {
@@ -1132,37 +1133,30 @@ footer .footer-flex .subscribe :last-child:hover {
 }
 
 @media (max-width: 991px) {
-  header {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    height: auto;
+  header nav {
+    line-height: 50px;
+  }
+  header nav label {
+    display: block;
+    cursor: pointer;
+    color: white;
+    text-align: center;
   }
   header nav ul {
-    display: none;
-    position: absolute;
-    right: 50%;
-    transform: translateX(50%);
-    width: 100%;
-    background-color: black;
-    border-bottom: 2px solid #b88b58;
-    margin: 0 auto;
-  }
-  header nav ul li {
-    display: block;
     text-align: center;
-    line-height: 25px;
-    padding: 10px;
-    padding-bottom: 5px;
+    width: 100%;
+    display: none;
   }
   header nav ul a {
-    color: white;
-    font-size: 18px;
-  }
-  header .mobile-menu {
     display: block;
-    padding: 10px 10px 0 0;
+    border-bottom: 1px solid #b88b58;
+    margin: 0;
+  }
+  header nav #toggle:checked + ul {
+    display: block;
+  }
+  .carousel-item img {
+    height: 650px;
   }
   .carousel-item .hero-title .text-hero {
     font-size: 50px;
@@ -1321,6 +1315,37 @@ footer .footer-flex .subscribe :last-child:hover {
 }
 
 @media (max-width: 640px) {
+  .title-section-black p {
+    padding-bottom: 30px;
+  }
+  .title-section-white p {
+    padding-bottom: 30px;
+  }
+  .nav-projects {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .nav-projects .nav-second {
+    width: 100%;
+  }
+  .nav-projects .nav-second ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .nav-projects .nav-second ul li {
+    text-align: center;
+    padding: 0;
+    border-right: none;
+    border-bottom: 1px dotted #aeaeae;
+  }
+  .nav-projects .nav-second ul li:last-child {
+    border-bottom: none;
+  }
+  .carousel-item img {
+    height: 500px;
+  }
   .carousel-item .hero-title .text-hero {
     font-size: 40px;
     line-height: -1;
@@ -1348,6 +1373,10 @@ footer .footer-flex .subscribe :last-child:hover {
     border-right: none;
     border-bottom: none;
   }
+  .gallery .pictures .photo {
+    width: 100%;
+    margin: 0 auto;
+  }
   .brands-section .brands {
     display: -ms-flexbox;
     display: flex;
@@ -1363,6 +1392,60 @@ footer .footer-flex .subscribe :last-child:hover {
     height: 284px;
     width: 384px;
     margin: 0 auto;
+  }
+  .map .contact-box {
+    width: 440px;
+  }
+}
+
+@media (max-width: 420px) {
+  .carousel-item img {
+    height: 650px;
+  }
+  .carousel-item .hero-title .text-hero {
+    font-size: 35px;
+    line-height: -1;
+  }
+  .carousel-item .hero-title span {
+    font-size: 35px;
+    line-height: -1;
+    top: 40px;
+  }
+  .work .facts .facts-descriptions + h2 {
+    line-height: 1;
+  }
+  .social-bar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .social-bar .social-icon {
+    padding-top: 10px;
+  }
+  .social-bar .social-icon small {
+    padding-right: 5px;
+  }
+  .social-bar .connection h1 {
+    padding-right: 30px;
+    font-size: 30px;
+  }
+  .contact .form1 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .contact .form1 input {
+    width: 100%;
+  }
+  .contact .form2 input {
+    width: 100%;
+    margin: 0;
+  }
+  .contact .form3 textarea {
+    width: 100%;
+    margin: 0;
   }
 }
 /*# sourceMappingURL=style.prefixed.css.map */
