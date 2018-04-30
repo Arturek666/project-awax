@@ -8,16 +8,9 @@ function showElement() {
 
 
 
-//button-top 
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 50) {
-        $('.scrolltop:hidden').stop(true, true).fadeIn();
-    } else {
-        $('.scrolltop').stop(true, true).fadeOut();
-    }
-});
-$(function() { $(".scroll").click(function() { $("html,body").animate({ scrollTop: $("#home").offset().top }, "1000"); return false }) })
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Select all links with hashes
 // Select all links with hashes
 $('a[href*="#"]')
     // Remove links that don't actually link to anything
@@ -53,3 +46,13 @@ $('a[href*="#"]')
             }
         }
     });
+
+//button-top 
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 50) {
+        $('.scrolltop:hidden').stop(true, true).fadeIn();
+    } else {
+        $('.scrolltop').stop(true, true).fadeOut();
+    }
+});
+$(function() { $(".scroll").click(function() { $("html,body").animate({ scrollTop: $("#home").offset().top }, "1000"); return false }) })
