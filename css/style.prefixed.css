@@ -45,7 +45,6 @@ header nav label {
   line-height: 70px;
   display: none;
   width: 26px;
-  float: right;
 }
 
 header nav #toggle {
@@ -1163,30 +1162,28 @@ footer .footer-flex .subscribe :last-child:hover {
   header nav {
     line-height: 70px;
   }
-  header nav .mobile-menu-center label {
-    display: block;
+  header nav label {
+    display: inline-block;
     cursor: pointer;
     color: white;
     line-height: 70px;
     transition: 0.6s;
+    float: right;
   }
-  header nav .mobile-menu-center label:hover {
+  header nav label:hover {
     color: #b88b58;
   }
-  header nav .mobile-menu-center ul {
+  header nav ul {
     text-align: center;
     width: 100%;
     display: none;
   }
-  header nav .mobile-menu-center ul li:hover {
-    display: none;
-  }
-  header nav .mobile-menu-center ul li a {
+  header nav ul a {
     display: block;
     border-bottom: 1px solid #b88b58;
     margin: 0;
   }
-  header nav .mobile-menu-center #toggle:checked + ul {
+  header nav #toggle:checked + ul {
     display: block;
     line-height: 50px;
     margin-top: 50px;
@@ -1212,6 +1209,9 @@ footer .footer-flex .subscribe :last-child:hover {
         flex-wrap: wrap;
     -ms-flex-pack: center;
         justify-content: center;
+  }
+  .about-flex .video img {
+    width: 100%;
   }
   .about-flex .about-flex-text {
     display: -ms-flexbox;
@@ -1374,9 +1374,6 @@ footer .footer-flex .subscribe :last-child:hover {
     padding: 0;
     border-right: none;
     border-bottom: 1px dotted #aeaeae;
-  }
-  .nav-projects .nav-second ul li:last-child {
-    border-bottom: none;
   }
   .carousel-item img {
     height: 500px;

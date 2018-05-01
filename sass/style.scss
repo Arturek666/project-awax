@@ -57,7 +57,6 @@ header {
             line-height: 70px;
             display: none;
             width: 26px;
-            float: right;
         }
         #toggle {
             display: none;
@@ -1061,42 +1060,33 @@ footer {
         nav {
             line-height: 70px;
 
-            .mobile-menu-center {
+            label {
+                display: inline-block;
+                cursor: pointer;
+                color: white;
+                line-height: 70px;
+                transition: 0.6s;
+                float: right;
+                &:hover {
+                    color: $goldColor;
+                }
+            }
 
-                label {
+            ul {
+                text-align: center;
+                width: 100%;
+                display: none;
+                a {
                     display: block;
-                    cursor: pointer;
-                    color: white;
-                    line-height: 70px;
-                    transition: 0.6s;
-                    &:hover {
-                        color: $goldColor;
-                    }
+                    border-bottom: 1px solid $goldColor;
+                    margin: 0;
                 }
+            }
 
-                ul {
-                    text-align: center;
-                    width: 100%;
-                    display: none;
-
-                    li {
-                        &:hover {
-                            display: none;
-                        }
-
-                        a {
-                            display: block;
-                            border-bottom: 1px solid $goldColor;
-                            margin: 0;
-                        }
-                    }
-                }
-
-                #toggle:checked+ul {
-                    display: block;
-                    line-height: 50px;
-                    margin-top: 50px;
-                }
+            #toggle:checked+ul {
+                display: block;
+                line-height: 50px;
+                margin-top: 50px;
             }
         }
     } //jimbotron
@@ -1122,6 +1112,11 @@ footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        .video {
+            img {
+                width: 100%;
+            }
+        }
         .about-flex-text {
             display: flex;
 
@@ -1311,9 +1306,6 @@ footer {
                     padding: 0;
                     border-right: none;
                     border-bottom: 1px dotted $darkGreyColor;
-                    &:last-child {
-                        border-bottom: none;
-                    }
                 }
             }
         }
