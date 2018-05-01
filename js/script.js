@@ -1,14 +1,3 @@
-document.getElementById("branding").addEventListener("click", showElement);
-
-function showElement() {
-    const getBranding = document.getElementByClassName("branding");
-}
-
-
-
-
-
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Select all links with hashes
 // Select all links with hashes

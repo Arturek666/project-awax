@@ -5,6 +5,13 @@
   padding: 0;
 }
 
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .wrapper {
   margin: 0 auto;
 }
@@ -21,11 +28,12 @@ header nav {
   line-height: 100px;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
-header nav div {
-  display: flex;
-  align-items: center;
+header nav .logo {
+  display: inline-block;
+  float: left;
 }
 
 header nav label {
@@ -53,6 +61,12 @@ header nav ul {
 
 header nav ul li {
   padding: 0 10px;
+  border-bottom: 5px solid black;
+  transition: 0.6s;
+}
+
+header nav ul li:hover {
+  border-bottom: 5px solid #b88b58;
 }
 
 header nav ul li a {
@@ -62,13 +76,6 @@ header nav ul li a {
   font-weight: bold;
   font-size: 14px;
   text-transform: uppercase;
-  transition: 0.4s;
-}
-
-header nav ul li a:hover {
-  display: flex;
-  align-items: flex-end;
-  border-bottom: 5px solid #b88b58;
   cursor: pointer;
 }
 
@@ -151,8 +158,14 @@ header nav ul li a:hover {
 
 .call-up {
   position: absolute;
-  right: 20%;
-  top: 83.5%;
+  right: 15%;
+  top: calc(100% - 35px);
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.call-up:hover {
+  transform: scale(1.1);
 }
 
 .title-section-black {
@@ -289,7 +302,7 @@ header nav ul li a:hover {
   border: 1px solid #aeaeae;
   border-radius: 25px;
   background-color: #f4f4f4;
-  width: 712px;
+  width: 612px;
   line-height: 56px;
 }
 
@@ -304,7 +317,8 @@ header nav ul li a:hover {
 .nav-projects .nav-second ul li {
   padding: 0 10px 0 10px;
   border-right: 1px solid #aeaeae;
-  transition: 0.4s;
+  border-bottom: 5px solid #f4f4f4;
+  transition: 0.6s;
 }
 
 .nav-projects .nav-second ul li:last-child {
@@ -312,8 +326,6 @@ header nav ul li a:hover {
 }
 
 .nav-projects .nav-second ul li:hover {
-  display: flex;
-  align-items: flex-end;
   border-bottom: 5px solid #b88b58;
   cursor: pointer;
 }
@@ -335,12 +347,17 @@ header nav ul li a:hover {
 }
 
 .pictures .photo {
-  position: relative;
   padding: 8px;
   text-align: center;
 }
 
-.pictures .photo .layer {
+.pictures .photo .layer-center {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+.pictures .photo .layer-center .layer {
   text-align: center;
   position: absolute;
   width: 255px;
@@ -352,7 +369,7 @@ header nav ul li a:hover {
   transition: all ease-in-out .5s;
 }
 
-.pictures .photo .layer h1 {
+.pictures .photo .layer-center .layer h1 {
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
   color: white;
@@ -362,7 +379,7 @@ header nav ul li a:hover {
   padding-top: 42px;
 }
 
-.pictures .photo .layer p {
+.pictures .photo .layer-center .layer p {
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
   color: white;
@@ -686,6 +703,7 @@ header nav ul li a:hover {
 
 .work {
   background-color: black;
+  height: auto;
 }
 
 .work .facts {
@@ -801,13 +819,13 @@ header nav ul li a:hover {
   border-top: 1px solid #aeaeae;
 }
 
-.contact .form1 {
+.contact .form-name {
   display: flex;
   justify-content: center;
   padding-bottom: 45px;
 }
 
-.contact .form1 input {
+.contact .form-name input {
   border-bottom: 1px solid #aeaeae;
   background: none;
   border-top: none;
@@ -823,12 +841,12 @@ header nav ul li a:hover {
   text-align: left;
 }
 
-.contact .form2 {
+.contact .form-subject {
   display: flex;
   justify-content: center;
 }
 
-.contact .form2 input {
+.contact .form-subject input {
   border-bottom: 1px solid #aeaeae;
   background: none;
   border-top: none;
@@ -844,12 +862,12 @@ header nav ul li a:hover {
   text-align: left;
 }
 
-.contact .form3 {
+.contact .form-textarea {
   display: flex;
   justify-content: center;
 }
 
-.contact .form3 textarea {
+.contact .form-textarea textarea {
   border-bottom: 1px solid #aeaeae;
   background: none;
   border-top: none;
@@ -897,14 +915,15 @@ header nav ul li a:hover {
   padding: 53px 40px 0 40px;
 }
 
-.map .contact-box .contact-map {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-bottom: 15px;
+.map .contact-box ul li {
+  list-style-type: none;
 }
 
-.map .contact-box .contact-map p {
+.map .contact-box ul li img {
+  margin-right: 15px;
+}
+
+.map .contact-box ul li p {
   font-size: 12px;
   font-family: "Myriad Pro";
   color: #7e7e7e;
@@ -939,7 +958,7 @@ header nav ul li a:hover {
 }
 
 footer {
-  height: 260px;
+  height: 100%;
   background-color: black;
 }
 
@@ -1059,26 +1078,35 @@ footer .footer-flex .subscribe :last-child:hover {
 
 @media (max-width: 991px) {
   header nav {
-    line-height: 50px;
+    line-height: 70px;
   }
-  header nav label {
+  header nav .mobile-menu-center label {
     display: block;
     cursor: pointer;
     color: white;
-    text-align: center;
+    line-height: 70px;
+    transition: 0.6s;
   }
-  header nav ul {
+  header nav .mobile-menu-center label:hover {
+    color: #b88b58;
+  }
+  header nav .mobile-menu-center ul {
     text-align: center;
     width: 100%;
     display: none;
   }
-  header nav ul a {
+  header nav .mobile-menu-center ul li:hover {
+    display: none;
+  }
+  header nav .mobile-menu-center ul li a {
     display: block;
     border-bottom: 1px solid #b88b58;
     margin: 0;
   }
-  header nav #toggle:checked + ul {
+  header nav .mobile-menu-center #toggle:checked + ul {
     display: block;
+    line-height: 50px;
+    margin-top: 50px;
   }
   .carousel-item img {
     height: 650px;
@@ -1192,12 +1220,6 @@ footer .footer-flex .subscribe :last-child:hover {
   .social-bar .connection h1 {
     padding-right: 30px;
   }
-  .map .contact-box {
-    margin: auto;
-  }
-  footer {
-    height: 700px;
-  }
   footer .footer-flex {
     display: flex;
     flex-direction: column-reverse;
@@ -1292,7 +1314,12 @@ footer .footer-flex .subscribe :last-child:hover {
     margin: 0 auto;
   }
   .map .contact-box {
-    width: 440px;
+    padding: 53px 10px 0 10px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  footer .footer-flex .subscribe {
+    margin: 0 auto;
   }
 }
 
@@ -1309,7 +1336,7 @@ footer .footer-flex .subscribe :last-child:hover {
     line-height: -1;
     top: 40px;
   }
-  .work .facts .facts-descriptions + h2 {
+  #some-facts .work .facts .facts-descriptions h2 {
     line-height: 1;
   }
   .social-bar {
@@ -1326,20 +1353,23 @@ footer .footer-flex .subscribe :last-child:hover {
     padding-right: 30px;
     font-size: 30px;
   }
-  .contact .form1 {
+  .contact .form-name {
     display: flex;
     flex-direction: column;
   }
-  .contact .form1 input {
+  .contact .form-name input {
     width: 100%;
   }
-  .contact .form2 input {
+  .contact .form-subject input {
     width: 100%;
     margin: 0;
   }
-  .contact .form3 textarea {
+  .contact .form-textarea textarea {
     width: 100%;
     margin: 0;
+  }
+  footer .footer-flex .subscribe {
+    width: 100%;
   }
 }
 
