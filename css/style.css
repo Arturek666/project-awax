@@ -37,7 +37,7 @@ header nav .logo {
 }
 
 header nav label {
-  margin: 0 40px 0 0;
+  margin-right: 20px;
   font-size: 26px;
   line-height: 70px;
   display: none;
@@ -1174,6 +1174,8 @@ footer .footer-flex .subscribe :last-child:hover {
   }
   .premium img {
     object-fit: contain;
+    width: 400px;
+    margin: 0 auto;
   }
   .premium .feature {
     display: flex;
@@ -1252,6 +1254,7 @@ footer .footer-flex .subscribe :last-child:hover {
   }
   .nav-projects .nav-second {
     width: 100%;
+    border-radius: 0;
   }
   .nav-projects .nav-second ul {
     display: flex;
@@ -1306,9 +1309,7 @@ footer .footer-flex .subscribe :last-child:hover {
     margin-bottom: 10px;
   }
   .premium img {
-    height: 284px;
-    width: 384px;
-    margin: 0 auto;
+    width: 100px;
   }
   .map .contact-box {
     padding: 53px 10px 0 10px;
@@ -1349,6 +1350,9 @@ footer .footer-flex .subscribe :last-child:hover {
   .social-bar .connection h1 {
     padding-right: 30px;
     font-size: 30px;
+  }
+  .premium img {
+    width: calc(100% - 50px);
   }
   .contact .form-name {
     display: flex;
