@@ -12,6 +12,12 @@
   display: table;
 }
 
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
 .wrapper {
   margin: 0 auto;
 }
@@ -171,7 +177,7 @@ header nav ul li a {
   padding-top: 65px;
 }
 
-.title-section-black h1 {
+.title-section-black h2 {
   color: black;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -195,7 +201,7 @@ header nav ul li a {
   padding-top: 65px;
 }
 
-.title-section-white h1 {
+.title-section-white h2 {
   color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -368,7 +374,7 @@ header nav ul li a {
   transition: all ease-in-out .5s;
 }
 
-.pictures .photo .layer-center .layer h1 {
+.pictures .photo .layer-center .layer h2 {
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
   color: white;
@@ -435,7 +441,7 @@ header nav ul li a {
   object-fit: contain;
 }
 
-#our-team .our-team1 .worker .about-profile h1 {
+#our-team .our-team1 .worker .about-profile h2 {
   text-align: center;
   font-size: 21px;
   font-family: "Montserrat", sans-serif;
@@ -505,7 +511,7 @@ header nav ul li a {
   padding-bottom: 30px;
 }
 
-.happy-client .client h1 {
+.happy-client .client h2 {
   font-size: 24px;
   font-family: "Montserrat", sans-serif;
   color: black;
@@ -571,7 +577,7 @@ header nav ul li a {
   padding: auto 0;
 }
 
-.price-section .prices .price-box h1 {
+.price-section .prices .price-box h2 {
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
@@ -647,7 +653,7 @@ header nav ul li a {
   padding-right: 30px;
 }
 
-.premium .tick h1 {
+.premium .tick h2 {
   font-size: 21px;
   font-family: "Montserrat", sans-serif;
   color: #242424;
@@ -712,7 +718,7 @@ header nav ul li a {
   padding-bottom: 115px;
 }
 
-.work .facts h1 {
+.work .facts h2 {
   font-size: 48px;
   font-family: "Montserrat", sans-serif;
   color: #b88b58;
@@ -720,7 +726,7 @@ header nav ul li a {
   line-height: 0.583;
 }
 
-.work .facts h2 {
+.work .facts h3 {
   font-size: 24px;
   font-family: "Montserrat", sans-serif;
   color: white;
@@ -760,7 +766,7 @@ header nav ul li a {
   height: 38px;
 }
 
-.social-bar .connection h1 {
+.social-bar .connection h2 {
   color: #aeaeae;
   padding-right: 62px;
 }
@@ -1188,7 +1194,7 @@ footer .footer-flex .subscribe :last-child:hover {
   .premium .feature .tick img {
     display: none;
   }
-  .premium .feature .tick .description h1 {
+  .premium .feature .tick .description h2 {
     text-align: center;
   }
   .premium .feature .tick .description p {
@@ -1219,7 +1225,7 @@ footer .footer-flex .subscribe :last-child:hover {
   .social-bar .social-icon small {
     padding-right: 15px;
   }
-  .social-bar .connection h1 {
+  .social-bar .connection h2 {
     padding-right: 30px;
   }
   footer .footer-flex {
@@ -1326,15 +1332,15 @@ footer .footer-flex .subscribe :last-child:hover {
     height: 650px;
   }
   .carousel-item .hero-title .text-hero {
-    font-size: 35px;
+    font-size: 30px;
     line-height: -1;
   }
   .carousel-item .hero-title span {
-    font-size: 35px;
+    font-size: 30px;
     line-height: -1;
     top: 40px;
   }
-  #some-facts .work .facts .facts-descriptions h2 {
+  #some-facts .work .facts .facts-descriptions h3 {
     line-height: 1;
   }
   .social-bar {
@@ -1347,7 +1353,7 @@ footer .footer-flex .subscribe :last-child:hover {
   .social-bar .social-icon small {
     padding-right: 5px;
   }
-  .social-bar .connection h1 {
+  .social-bar .connection h2 {
     padding-right: 30px;
     font-size: 30px;
   }
