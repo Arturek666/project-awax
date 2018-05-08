@@ -462,7 +462,7 @@ header nav ul li a {
   padding-bottom: 50px;
 }
 
-#our-team .our-team1 .worker {
+#our-team .our-team1 figure {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -476,16 +476,16 @@ header nav ul li a {
   transition: 0.5s;
 }
 
-#our-team .our-team1 .worker img {
+#our-team .our-team1 figure img {
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-#our-team .our-team1 .worker:hover {
+#our-team .our-team1 figure:hover {
   transform: scale(1.1);
 }
 
-#our-team .our-team1 .worker .about-profile h2 {
+#our-team .our-team1 figure figcaption h2 {
   text-align: center;
   font-size: 21px;
   font-family: "Montserrat", sans-serif;
@@ -496,7 +496,7 @@ header nav ul li a {
   padding-top: 45px;
 }
 
-#our-team .our-team1 .worker .about-profile p {
+#our-team .our-team1 figure figcaption p {
   text-align: center;
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
@@ -505,7 +505,7 @@ header nav ul li a {
   font-weight: 400;
 }
 
-#our-team .our-team1 .worker .social-team {
+#our-team .our-team1 figure .social-team {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -513,7 +513,7 @@ header nav ul li a {
   padding: 0 3px;
 }
 
-#our-team .our-team1 .worker .social-team .icon-btn {
+#our-team .our-team1 figure .social-team .icon-btn {
   border-radius: 50%;
   background-color: #aeaeae;
   border: none;
@@ -523,17 +523,17 @@ header nav ul li a {
   margin: 30px 3px 0 3px;
 }
 
-#our-team .our-team1 .worker .social-team .icon-btn:hover {
+#our-team .our-team1 figure .social-team .icon-btn:hover {
   background-color: #b88b58;
   cursor: pointer;
 }
 
-#our-team .our-team1 .worker .social-team .icon-btn .fab {
+#our-team .our-team1 figure .social-team .icon-btn .fab {
   font-size: 17px;
   color: white;
 }
 
-#our-team .our-team1 .worker .social-team .icon-btn .fas {
+#our-team .our-team1 figure .social-team .icon-btn .fas {
   font-size: 17px;
   color: white;
 }
@@ -1168,7 +1168,7 @@ footer .footer-flex .subscribe :last-child:hover {
   .gallery .pictures .photo {
     width: 25%;
   }
-  .our-team1 .worker {
+  .our-team1 figure {
     width: 33.333334%;
   }
 }
@@ -1261,7 +1261,7 @@ footer .footer-flex .subscribe :last-child:hover {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  #our-team .our-team1 .worker {
+  #our-team .our-team1 figure {
     margin: 0 30% 15px 30%;
   }
   .price-section .prices {
