@@ -282,7 +282,7 @@ header nav ul li a {
   width: 100%;
 }
 
-#services .services figure {
+#services .services .service {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -293,17 +293,17 @@ header nav ul li a {
   width: 25%;
 }
 
-#services .services figure:last-child {
+#services .services .service:last-child {
   border-right: 1px solid #aeaeae;
 }
 
-#services .services figure img {
+#services .services .service img {
   -o-object-fit: contain;
      object-fit: contain;
   padding-bottom: 10px;
 }
 
-#services .services figure .service-title {
+#services .services .service .service-title {
   color: white;
   text-align: center;
   font-size: 18px;
@@ -312,7 +312,7 @@ header nav ul li a {
   line-height: 1;
 }
 
-#services .services figure .service-para {
+#services .services .service .service-para {
   color: #aeaeae;
   text-align: center;
   font-size: 12px;
@@ -462,7 +462,7 @@ header nav ul li a {
   padding-bottom: 50px;
 }
 
-#our-team .our-team1 figure {
+#our-team .our-team1 .worker {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -476,16 +476,16 @@ header nav ul li a {
   transition: 0.5s;
 }
 
-#our-team .our-team1 figure img {
+#our-team .our-team1 .worker img {
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-#our-team .our-team1 figure:hover {
+#our-team .our-team1 .worker:hover {
   transform: scale(1.1);
 }
 
-#our-team .our-team1 figure figcaption h2 {
+#our-team .our-team1 .worker .about-profile h2 {
   text-align: center;
   font-size: 21px;
   font-family: "Montserrat", sans-serif;
@@ -496,7 +496,7 @@ header nav ul li a {
   padding-top: 45px;
 }
 
-#our-team .our-team1 figure figcaption p {
+#our-team .our-team1 .worker .about-profile p {
   text-align: center;
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
@@ -505,7 +505,7 @@ header nav ul li a {
   font-weight: 400;
 }
 
-#our-team .our-team1 figure .social-team {
+#our-team .our-team1 .worker .social-team {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -513,7 +513,7 @@ header nav ul li a {
   padding: 0 3px;
 }
 
-#our-team .our-team1 figure .social-team .icon-btn {
+#our-team .our-team1 .worker .social-team .icon-btn {
   border-radius: 50%;
   background-color: #aeaeae;
   border: none;
@@ -523,17 +523,17 @@ header nav ul li a {
   margin: 30px 3px 0 3px;
 }
 
-#our-team .our-team1 figure .social-team .icon-btn:hover {
+#our-team .our-team1 .worker .social-team .icon-btn:hover {
   background-color: #b88b58;
   cursor: pointer;
 }
 
-#our-team .our-team1 figure .social-team .icon-btn .fab {
+#our-team .our-team1 .worker .social-team .icon-btn .fab {
   font-size: 17px;
   color: white;
 }
 
-#our-team .our-team1 figure .social-team .icon-btn .fas {
+#our-team .our-team1 .worker .social-team .icon-btn .fas {
   font-size: 17px;
   color: white;
 }
@@ -1168,7 +1168,7 @@ footer .footer-flex .subscribe :last-child:hover {
   .gallery .pictures .photo {
     width: 25%;
   }
-  .our-team1 figure {
+  .our-team1 .worker {
     width: 33.333334%;
   }
 }
@@ -1248,7 +1248,7 @@ footer .footer-flex .subscribe :last-child:hover {
     margin-bottom: 20px;
     height: auto;
   }
-  #services .services figure {
+  #services .services .service {
     width: 50%;
     margin-bottom: 20px;
   }
@@ -1261,8 +1261,8 @@ footer .footer-flex .subscribe :last-child:hover {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  #our-team .our-team1 figure {
-    margin: 0 30% 15px 30%;
+  #our-team .our-team1 .worker {
+    margin: 0 30% 30px 30%;
   }
   .price-section .prices {
     display: -ms-flexbox;
@@ -1273,7 +1273,7 @@ footer .footer-flex .subscribe :last-child:hover {
         justify-content: center;
   }
   .price-section .prices .price-box {
-    margin: 0 3%;
+    margin: 3% 3%;
     margin-bottom: 15px;
   }
   .premium {
@@ -1413,13 +1413,13 @@ footer .footer-flex .subscribe :last-child:hover {
   #services .services:nth-child(2) {
     border-right: none;
   }
-  #services .services figure {
+  #services .services .service {
     width: 100%;
     border-right: none;
     border-left: none;
     border-bottom: 1px solid white;
   }
-  #services .services figure:last-child {
+  #services .services .service:last-child {
     border-right: none;
     border-bottom: none;
   }
@@ -1438,7 +1438,7 @@ footer .footer-flex .subscribe :last-child:hover {
     margin-bottom: 10px;
   }
   .premium img {
-    width: 100px;
+    width: 300px;
   }
   .map .contact-box {
     padding: 53px 10px 0 10px;

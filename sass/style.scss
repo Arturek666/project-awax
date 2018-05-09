@@ -290,7 +290,7 @@
             flex-wrap: wrap;
             width: 100%;
 
-            figure {
+            .service {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -443,7 +443,7 @@
             flex-direction: row;
             justify-content: center;
             padding-bottom: 50px;
-            figure {
+            .worker {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -459,7 +459,7 @@
                 &:hover {
                     transform: scale(1.1);
                 }
-                figcaption {
+                .about-profile {
                     h2 {
                         text-align: center;
                         font-size: 21px;
@@ -893,23 +893,18 @@
         height: 400px;
         position: relative;
 
-
         .contact-box {
             width: 540px;
             height: 343px;
             background-color: $whiteColor;
-
             position: absolute;
             top: 20px;
             left: 20px;
-
-
 
             ul {
 
                 li {
                     list-style-type: none;
-
                     img {
                         margin-right: 15px;
                     }
@@ -1067,7 +1062,7 @@
             }
         } //out-team
         .our-team1 {
-            figure {
+            .worker {
                 width: 33.333334%;
             }
         }
@@ -1156,7 +1151,7 @@
                     height: auto;
                 }
 
-                figure {
+                .service {
                     width: 50%;
 
                     margin-bottom: 20px;
@@ -1177,8 +1172,8 @@
             .our-team1 {
                 display: flex;
                 flex-wrap: wrap;
-                figure {
-                    margin: 0 30% 15px 30%;
+                .worker {
+                    margin: 0 30% 30px 30%;
                 }
             }
         }
@@ -1191,7 +1186,7 @@
                 flex-wrap: wrap;
                 justify-content: center;
                 .price-box {
-                    margin: 0 3%;
+                    margin: 3% 3%;
                     margin-bottom: 15px;
                 }
             }
@@ -1360,7 +1355,7 @@
                 &:nth-child(2) {
                     border-right: none;
                 }
-                figure {
+                .service {
                     width: 100%;
                     border-right: none;
                     border-left: none;
@@ -1401,7 +1396,7 @@
 
             img {
 
-                width: 100px;
+                width: 300px;
             }
         }
 
