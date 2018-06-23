@@ -14,20 +14,19 @@ $('a[href*="#"]')
         // On-page links
         if (
             location.pathname.replace(/^\//, '') ==
-                this.pathname.replace(/^\//, '') &&
+            this.pathname.replace(/^\//, '') &&
             location.hostname == this.hostname
         ) {
             // Figure out element to scroll to
             var target = $(this.hash);
-            target = target.length
-                ? target
-                : $('[name=' + this.hash.slice(1) + ']');
+            target = target.length ?
+                target :
+                $('[name=' + this.hash.slice(1) + ']');
             // Does a scroll target exist?
             if (target.length) {
                 // Only prevent default if animation is actually gonna happen
                 event.preventDefault();
-                $('html, body').animate(
-                    {
+                $('html, body').animate({
                         scrollTop: target.offset().top,
                     },
                     1000,
@@ -78,164 +77,127 @@ function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
         center: uluru,
         zoom: 12,
-        styles: [
-            {
+        styles: [{
                 elementType: 'geometry',
-                stylers: [
-                    {
-                        color: '#f5f5f5',
-                    },
-                ],
+                stylers: [{
+                    color: '#f5f5f5',
+                }, ],
             },
             {
                 elementType: 'labels.icon',
-                stylers: [
-                    {
-                        visibility: 'off',
-                    },
-                ],
+                stylers: [{
+                    visibility: 'off',
+                }, ],
             },
             {
                 elementType: 'labels.text.fill',
-                stylers: [
-                    {
-                        color: '#616161',
-                    },
-                ],
+                stylers: [{
+                    color: '#616161',
+                }, ],
             },
             {
                 elementType: 'labels.text.stroke',
-                stylers: [
-                    {
-                        color: '#f5f5f5',
-                    },
-                ],
+                stylers: [{
+                    color: '#f5f5f5',
+                }, ],
             },
             {
                 featureType: 'administrative.land_parcel',
                 elementType: 'labels.text.fill',
-                stylers: [
-                    {
-                        color: '#bdbdbd',
-                    },
-                ],
+                stylers: [{
+                    color: '#bdbdbd',
+                }, ],
             },
             {
                 featureType: 'poi',
                 elementType: 'geometry',
-                stylers: [
-                    {
-                        color: '#eeeeee',
-                    },
-                ],
+                stylers: [{
+                    color: '#eeeeee',
+                }, ],
             },
             {
                 featureType: 'poi',
                 elementType: 'labels.text.fill',
-                stylers: [
-                    {
-                        color: '#757575',
-                    },
-                ],
+                stylers: [{
+                    color: '#757575',
+                }, ],
             },
             {
                 featureType: 'poi.park',
                 elementType: 'geometry',
-                stylers: [
-                    {
-                        color: '#e5e5e5',
-                    },
-                ],
+                stylers: [{
+                    color: '#e5e5e5',
+                }, ],
             },
             {
                 featureType: 'poi.park',
                 elementType: 'labels.text.fill',
-                stylers: [
-                    {
-                        color: '#9e9e9e',
-                    },
-                ],
+                stylers: [{
+                    color: '#9e9e9e',
+                }, ],
             },
             {
                 featureType: 'road',
                 elementType: 'geometry',
-                stylers: [
-                    {
-                        color: '#ffffff',
-                    },
-                ],
+                stylers: [{
+                    color: '#ffffff',
+                }, ],
             },
             {
                 featureType: 'road.arterial',
                 elementType: 'labels.text.fill',
-                stylers: [
-                    {
-                        color: '#757575',
-                    },
-                ],
+                stylers: [{
+                    color: '#757575',
+                }, ],
             },
             {
                 featureType: 'road.highway',
                 elementType: 'geometry',
-                stylers: [
-                    {
-                        color: '#dadada',
-                    },
-                ],
+                stylers: [{
+                    color: '#dadada',
+                }, ],
             },
             {
                 featureType: 'road.highway',
                 elementType: 'labels.text.fill',
-                stylers: [
-                    {
-                        color: '#616161',
-                    },
-                ],
+                stylers: [{
+                    color: '#616161',
+                }, ],
             },
             {
                 featureType: 'road.local',
                 elementType: 'labels.text.fill',
-                stylers: [
-                    {
-                        color: '#9e9e9e',
-                    },
-                ],
+                stylers: [{
+                    color: '#9e9e9e',
+                }, ],
             },
             {
                 featureType: 'transit.line',
                 elementType: 'geometry',
-                stylers: [
-                    {
-                        color: '#e5e5e5',
-                    },
-                ],
+                stylers: [{
+                    color: '#e5e5e5',
+                }, ],
             },
             {
                 featureType: 'transit.station',
                 elementType: 'geometry',
-                stylers: [
-                    {
-                        color: '#eeeeee',
-                    },
-                ],
+                stylers: [{
+                    color: '#eeeeee',
+                }, ],
             },
             {
                 featureType: 'water',
                 elementType: 'geometry',
-                stylers: [
-                    {
-                        color: '#c9c9c9',
-                    },
-                ],
+                stylers: [{
+                    color: '#c9c9c9',
+                }, ],
             },
             {
                 featureType: 'water',
                 elementType: 'labels.text.fill',
-                stylers: [
-                    {
-                        color: '#9e9e9e',
-                    },
-                ],
+                stylers: [{
+                    color: '#9e9e9e',
+                }, ],
             },
         ],
     });
@@ -247,3 +209,43 @@ function initMap() {
         map: map,
     });
 }
+
+//Gallery Filter
+
+$(document).ready(function() {
+    $('.category-item').click(function() {
+        var category = $(this).attr('id');
+
+        if (category == 'all') {
+            $('.animal-item').addClass('hide');
+            setTimeout(function() {
+                $('.animal-item').removeClass('hide');
+            }, 300);
+        } else {
+            $('.animal-item').addClass('hide');
+            setTimeout(function() {
+                $('.' + category).removeClass('hide');
+            }, 300);
+        }
+    });
+});
+
+
+//cookies
+window.addEventListener("load", function() {
+    window.cookieconsent.initialise({
+        "palette": {
+            "popup": {
+                "background": "#090808"
+            },
+            "button": {
+                "background": "transparent",
+                "text": "#b88b58",
+                "border": "#b88b58"
+            }
+        },
+        "content": {
+            "dismiss": "OK"
+        }
+    })
+});

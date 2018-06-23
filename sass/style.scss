@@ -103,9 +103,9 @@ header {
 
 .carousel-item {
 
-    img {
 
-        height: 750px;
+    img {
+        height: 600px;
         position: relative;
     }
 
@@ -162,7 +162,12 @@ header {
         padding-top: 70px;
         position: absolute;
         left: calc(50% - 96px);
-        top: 50%;
+        top: 55%;
+        a {
+            color: white;
+            text-decoration: none;
+            padding: 20px 40px;
+        }
         .btn-transparent {
             &:hover {
                 background-color: transparent;
@@ -190,7 +195,13 @@ header {
     background-color: $goldColor;
     color: $whiteColor;
     border: none;
-    transition: 0.6s;
+    transition: 0.4s;
+    a {
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        padding: 20px 45px;
+    }
 }
 
 .call-up {
@@ -262,10 +273,12 @@ header {
         text-align: left;
     }
 
-    .video {
-        img {
-            padding-bottom: 75px;
-        }
+    #myVideo {
+        width: 40%;
+        height: 15%;
+        padding-bottom: 75px;
+        margin: 10px;
+        object-fit: cover;
     }
 
     .btn-transparent-about {
@@ -330,17 +343,17 @@ header {
         border: 1px solid $darkGreyColor;
         border-radius: 25px;
         background-color: $greyColor;
-        width: 612px;
-        line-height: 56px;
+        width: 50%;
 
         ul {
             display: flex;
             flex: 1;
             justify-content: center;
+            align-items: center;
             list-style-type: none;
             margin-bottom: 0 !important;
             li {
-                padding: 0 10px 0 10px;
+                padding: 10px 20px;
                 border-right: 1px solid $darkGreyColor;
                 border-bottom: 5px solid $greyColor;
                 transition: 0.6s;
@@ -352,25 +365,17 @@ header {
                     border-bottom: 5px solid $goldColor;
                     cursor: pointer;
                 }
-                a {
-                    text-decoration: none;
-                    color: $blackColor;
-                    font-family: $fontMontserrat, sans-serif;
-                    font-size: 14px;
-                    text-transform: uppercase;
-                    line-height: 56px;
-                    font-weight: 600;
-                }
             }
         }
     }
 } //Gallery
 .pictures {
     display: flex;
+    flex: 1;
     flex-wrap: wrap;
     padding-top: 38px;
-    .photo {
-
+    .animal-item {
+        transition: all 0.4s ease-in-out;
         padding: 8px;
 
         text-align: center;
@@ -411,7 +416,7 @@ header {
     }
 }
 
-.gallery .photo:hover .layer {
+.gallery .animal-item:hover .layer {
     transform: scale(1);
     cursor: pointer;
 }
@@ -702,10 +707,15 @@ header {
     justify-content: center;
     padding: 145px 0 60px 0;
     button {
+        a {
+            color: white;
+        }
         &:hover {
             background-color: transparent;
             border: 1px solid $goldColor;
-            color: $goldColor;
+            a {
+                color: $goldColor;
+            }
         }
     }
 } //Start Work Section
@@ -1067,7 +1077,7 @@ footer {
             padding: 5px;
             dosplay: flex;
             flex-wrap: wrap;
-            .photo {
+            .animal-item {
                 width: 25%;
             }
         }
@@ -1174,7 +1184,7 @@ footer {
 
         .pictures {
 
-            .photo {
+            .animal-item {
                 width: 50%;
             }
         }
@@ -1384,7 +1394,7 @@ footer {
 
         .pictures {
 
-            .photo {
+            .animal-item {
                 width: 100%;
             }
         }
@@ -1530,4 +1540,10 @@ footer {
             }
         }
     }
+}
+
+.hide {
+    width: 0;
+    transition: all 0.4s ease-in-out;
+    transform: scale(0);
 }
