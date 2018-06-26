@@ -276,9 +276,7 @@ header {
     #myVideo {
         width: 40%;
         height: 15%;
-        padding-bottom: 75px;
-        margin: 10px;
-        object-fit: cover;
+        margin-bottom: 75px;
     }
 
     .btn-transparent-about {
@@ -375,7 +373,6 @@ header {
     flex-wrap: wrap;
     padding-top: 38px;
     .animal-item {
-        transition: all 0.4s ease-in-out;
         padding: 8px;
 
         text-align: center;
@@ -1075,7 +1072,7 @@ footer {
     .gallery {
         .pictures {
             padding: 5px;
-            dosplay: flex;
+            display: flex;
             flex-wrap: wrap;
             .animal-item {
                 width: 25%;
@@ -1333,17 +1330,19 @@ footer {
     .nav-projects {
         flex-direction: column;
         .nav-second {
-            width: 100%;
+            width: 80%;
             border-radius: 0;
+            margin: 0 auto;
             ul {
                 display: flex;
                 flex-direction: column;
 
                 li {
                     text-align: center;
-                    padding: 0;
+                    padding: 5px;
                     border-right: none;
                     border-bottom: 1px dotted $darkGreyColor;
+                    width: 100%;
                 }
             }
         }
@@ -1543,7 +1542,5 @@ footer {
 }
 
 .hide {
-    width: 0;
-    transition: all 0.4s ease-in-out;
-    transform: scale(0);
+    display: none;
 }
